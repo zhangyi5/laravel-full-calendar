@@ -269,7 +269,7 @@ class Calendar
             $replace[] = $this->getCallbacks()[$name];
         }
 
-        //return str_replace($search, $replace, $json);
-        return Str::replaceArray($search, $replace, $json);
+        return str_replace($search, $replace, $json);
+        //return Str::replaceArray($search, $replace, $json);
     }
 }
